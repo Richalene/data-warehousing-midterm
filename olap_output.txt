@@ -1,0 +1,35 @@
+SQLite encounters: 984
+SQLite foreign key issues: 0
+
+Derived service line comparison (10 rows)
+service_line | encounters | avg_stay_days | avg_cost | total_cost | readmissions | readmission_pct | stay_rank | spend_rank | cumulative_cost_by_spend_rank
+Oncology | 131 | 42.12 | 22519.08 | 2950000.0 | 33 | 25.19 | 1 | 1 | 2950000.0
+Neurology | 66 | 40.33 | 10000.0 | 660000.0 | 33 | 50.0 | 2 | 4 | 6637000.0
+Cardiovascular | 198 | 38.26 | 11348.48 | 2247000.0 | 131 | 66.16 | 3 | 2 | 5197000.0
+General surgery | 66 | 37.44 | 8000.0 | 528000.0 | 33 | 50.0 | 4 | 5 | 7165000.0
+Orthopedics | 197 | 37.04 | 2487.31 | 490000.0 | 33 | 16.75 | 5 | 6 | 7655000.0
+Urology | 65 | 36.46 | 6000.0 | 390000.0 | 0 | 0.0 | 6 | 7 | 8045000.0
+Metabolic | 65 | 36.09 | 2000.0 | 130000.0 | 1 | 1.54 | 7 | 8 | 8175000.0
+Obstetrics | 65 | 35.52 | 12000.0 | 780000.0 | 0 | 0.0 | 8 | 3 | 5977000.0
+Respiratory | 65 | 34.66 | 800.0 | 52000.0 | 0 | 0.0 | 9 | 9 | 8227000.0
+Allergy and immunology | 66 | 34.24 | 100.0 | 6600.0 | 0 | 0.0 | 10 | 10 | 8233600.0
+
+Condition comparison with LAG (15 rows)
+condition | service_line | encounters | avg_stay_days | total_cost | difference_from_previous_condition_days
+Cancer | Oncology | 66 | 42.65 | 1650000.0 | -
+Prostate Cancer | Oncology | 65 | 41.58 | 1300000.0 | -1.07
+Heart Attack | Cardiovascular | 67 | 41.0 | 1206000.0 | -
+Stroke | Neurology | 66 | 40.33 | 660000.0 | -
+Fractured Leg | Orthopedics | 67 | 39.0 | 201000.0 | -
+Heart Disease | Cardiovascular | 65 | 38.22 | 975000.0 | -2.78
+Osteoarthritis | Orthopedics | 64 | 37.86 | 256000.0 | -1.14
+Appendicitis | General surgery | 66 | 37.44 | 528000.0 | -
+Kidney Stones | Urology | 65 | 36.46 | 390000.0 | -
+Diabetes | Metabolic | 65 | 36.09 | 130000.0 | -
+Childbirth | Obstetrics | 65 | 35.52 | 780000.0 | -
+Hypertension | Cardiovascular | 66 | 35.52 | 66000.0 | -2.7
+Respiratory Infection | Respiratory | 65 | 34.66 | 52000.0 | -
+Fractured Arm | Orthopedics | 66 | 34.26 | 33000.0 | -3.6
+Allergic Reaction | Allergy and immunology | 66 | 34.24 | 6600.0 | -
+
+MongoDB $facet: NOT EXECUTED (pass --mongo-uri with a running server)
